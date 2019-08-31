@@ -89,7 +89,7 @@ body {
 #logo path:nth-child(1) {
     stroke-dasharray: 1453;
     stroke-dashoffset: 1453;
-    animation: line-anim 2s ease forwards 1s;
+    animation: line-anim 3s ease forwards 3.3s;
     /* animation: fill 0.5s ease forwards 3.5s; */
   }
 @keyframes line-anim {
