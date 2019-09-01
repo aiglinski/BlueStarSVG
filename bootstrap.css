@@ -7484,6 +7484,7 @@ a.close.disabled {
 }
 
 .bg-primary {
+  /* background-image: linear-gradient(to bottom right, #2196F3, #22ebf3) */
   background-color: #2196F3 !important;
 }
 

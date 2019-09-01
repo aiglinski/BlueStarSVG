@@ -3,6 +3,9 @@ html {
     height: 100%;
 }
 
+#nav-logo {
+    color: #ffffff
+}
 
 #logo {
     position: absolute;
@@ -138,6 +141,6 @@ html {
     }
 
     to {
-        fill: #2296f3;
+        fill: #2196F3;
     }
 }
