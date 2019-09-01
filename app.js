@@ -1,10 +1,11 @@
-// const logoText = document.querySelectorAll('#logo-text path');
-// for (let i = 0; i < logoText.length; i++) {
-//     console.log(`letter ${i} is ${logoText[i].getTotalLength()}`)
-// }
+// const yelp = new Yelp();
+const ui = new UI();
 
+function getYelp() {
+    yelp.getYelp()
+        .then(results => {
+            console.log(results);
+        })
+        .catch(err => console.log(err));
 
-// const logo = document.querySelectorAll('#logo path');
-// for (let i = 0; i < logo.length; i++) {
-//     console.log(`Element ${i} is ${logo[i].getTotalLength()}`)
-// }
+}

@@ -29,11 +29,25 @@ html {
   min-height: 100%;
 }
 .section2 {
-  min-height: 400px;
+  min-height: 100%;
+  background-color: #2196f3;
+  opacity: 0.1;
+}
+#TextArea1 {
   background-color: #444444;
+  height: 400px;
+  width: 400px;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translateX(-50%);
+}
+.section3 {
+  min-height: 100%;
+  background-color: #ffffff;
 }
 .sec {
   position: relative!;
+  min-height: 100%;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
