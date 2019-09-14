@@ -8,6 +8,7 @@
     <title>Blue Star Cafe</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="bootstrap.css" />
+    <script src="js/jquery.js"></script>
 
 </head>
 
@@ -27,10 +28,10 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
+                        <a class="nav-link" href="bearer.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Delivery</a>
+                        <a class="nav-link" href="http://google.com">Delivery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Our Story</a>
@@ -39,7 +40,7 @@
             </div>
         </nav>
 
-        <div class="container d-sm-none d-md-none d-lg-block">
+        <div class="container d-sm-none d-md-none d-lg-block landingSvg">
             <svg id="logo-text" class="pt-5" width="896" height="116" viewBox="0 0 896 116" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -79,40 +80,53 @@
             </svg>
             <hr id="hrHome">
             <hr id="hrHome">
-
-            <svg id="logo" width="697" height="788" viewBox="0 0 697 788" fill="none"
+        </div>
+        <div class="container d-sm-none d-md-none d-lg-block stizar">
+            <svg id="logo" width="500" height="500" viewBox="0 0 500 500" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M347 419L391.903 557.197H537.211L419.654 642.607L464.557 780.803L347 695.393L229.443 780.803L274.346 642.607L156.789 557.197H302.097L347 419Z"
-                    stroke="black" stroke-width="5" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M309.7 190.983L250.683 0L191.666 190.983H0.683044L155.192 309.017L96.1746 500L250.683 381.966L405.192 500L346.175 309.017L500.683 190.983H309.7ZM485.902 195.983H306.012L250.683 16.9353L195.354 195.983H15.4645L160.998 307.161L105.57 486.53L250.683 375.674L395.796 486.53L340.368 307.161L485.902 195.983Z"
+                    fill="url(#paint0_linear)" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M309.7 190.983L250.683 0L191.666 190.983H0.683044L155.192 309.017L96.1746 500L250.683 381.966L405.192 500L346.175 309.017L500.683 190.983H309.7ZM485.902 195.983H306.012L250.683 16.9353L195.354 195.983H15.4645L160.998 307.161L105.57 486.53L250.683 375.674L395.796 486.53L340.368 307.161L485.902 195.983Z"
+                    fill="url(#paint1_linear)" />
+                <defs>
+                    <linearGradient id="paint0_linear" x1="250.683" y1="0" x2="250.683" y2="500"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.546875" stop-color="#25F2FF" stop-opacity="0" />
+                        <stop offset="0.90625" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear" x1="250.683" y1="0" x2="250.683" y2="500"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#41AFFF" />
+                        <stop offset="0.770833" stop-color="#68F4FF" stop-opacity="0.03125" />
+                        <stop offset="0.9999" stop-color="#68F4FF" stop-opacity="0.03125" />
+                        <stop offset="1" stop-color="#69F6FF" stop-opacity="0" />
+                        <stop offset="1" stop-color="#69F6FF" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
             </svg>
         </div>
     </div>
     </section>
-    <section class="section2">
-        <div class="sec">
+    <div class="section2">
+        <div>
             <p id="TextArea1"></p>
         </div>
-    </section>
+    </div>
     <section class="section3">
-        <div class="sec">
+        <div>
 
         </div>
     </section>
 
 
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="popper.min.js"></script>
+
+    <script src="js/popper.js"></script>
     <script src="bootstrap.min.js"></script>
 
-    <script src="YelpAccess.js"></script>
-
-
-
-    <!-- <script src="yelp.js"></script>
-<script src="ui.js"></script>
-<script src="app.js"></script> -->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

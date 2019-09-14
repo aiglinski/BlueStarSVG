@@ -7,11 +7,26 @@ html {
   color: #ffffff;
 }
 
+
+
+.stizar {
+  width: 100%;
+  height: 100%;
+  padding-top: 50%;
+  position: relative;
+}
+
 #logo {
+  max-height: 100%;
+  max-width: 100%;
+  width: 75%;
+  height: 75%;
   position: absolute;
+  top: 50%;
+  bottom: 50%;
   right: 50%;
   left: 50%;
-  transform: translatex(-50%);
+  transform: translate(-50%, -60%);
 }
 
 #logo-text {
@@ -25,14 +40,14 @@ html {
   border: 1px solid #444444;
 }
 
-.landing {
-  min-height: 100%;
-}
+
+
 .section2 {
   min-height: 100%;
   background-color: #2196f3;
   opacity: 0.1;
 }
+
 #TextArea1 {
   background-color: #444444;
   height: 400px;
@@ -41,12 +56,15 @@ html {
   margin-right: 50%;
   transform: translateX(-50%);
 }
+
 .section3 {
   min-height: 100%;
   background-color: #ffffff;
 }
+
 .sec {
-  position: relative!;
+  position: relative !;
+  background-color: #d1d4dd;
   min-height: 100%;
   background-position: center;
   background-size: cover;
@@ -59,10 +77,11 @@ html {
   animation-delay: 4.5s;
 }
 
-#logo {
-  animation: fillLogo 1.2s ease forwards 5.5s;
-  transform: translate(-50%, -50%);
-}
+
+
+
+
+
 
 #logo-text path:nth-child(1) {
   stroke-dasharray: 607.349;
@@ -136,11 +155,9 @@ html {
   animation: line-anim 2s ease forwards 3.3s;
 }
 
-#logo path:nth-child(1) {
-  stroke-dasharray: 1453;
-  stroke-dashoffset: 1453;
-  animation: line-anim 3s ease forwards 3.5s;
-}
+
+
+
 
 @keyframes line-anim {
   to {
