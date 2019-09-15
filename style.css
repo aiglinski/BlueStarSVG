@@ -44,8 +44,7 @@ html {
 
 .section2 {
   min-height: 100%;
-  background-color: #2196f3;
-  opacity: 0.1;
+
 }
 
 #TextArea1 {
@@ -183,4 +182,10 @@ html {
   to {
     fill: #2196f3;
   }
+}
+
+
+
+.textTitle {
+  color: black
 }
