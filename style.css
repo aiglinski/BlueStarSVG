@@ -44,7 +44,14 @@ html {
 
 .section2 {
   min-height: 100%;
+}
 
+.reviewRating {
+  height: 1.5rem;
+}
+
+.yelpInvite {
+  text-align: center;
 }
 
 #TextArea1 {
@@ -182,10 +189,4 @@ html {
   to {
     fill: #2196f3;
   }
-}
-
-
-
-.textTitle {
-  color: black
 }
