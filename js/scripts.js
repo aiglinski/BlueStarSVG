@@ -2,7 +2,7 @@ $(document).ready(function () {
     var settingsRev = {
         "async": true,
         "crossDomain": true,
-        "url": "https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/RQZCOKGctMfuf-MRVUdVnw/reviews",
+        "url": "https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/RQZCOKGctMfuf-MRVUdVnw/reviews?sort_by=date_desc",
         "method": "GET",
         "headers": {
             "Content-Type": "application/json",
@@ -30,9 +30,9 @@ $(document).ready(function () {
     $.ajax(settingsRev).done(function (responseReviews) {
 
         var reviewOne = {
-            name: responseReviews.reviews[0].user.name,
-            text: responseReviews.reviews[0].text,
-            rating: responseReviews.reviews[0].rating,
+            name: responseReviews.reviews[i].user.name,
+            text: responseReviews.reviews[i].text,
+            rating: responseReviews.reviews[i].rating,
         }
         document.getElementById('textTitle1').innerHTML = reviewOne.name;
         document.getElementById('review1Text').innerHTML = reviewOne.text;
@@ -63,7 +63,7 @@ $(document).ready(function () {
         var count = responseGen.review_count;
         var ratingAve = responseGen.rating;
 
-        document.getElementById('reviewCount').innerHTML = `Currently there are ${count} with an average of ${ratingAve} stars`
+        document.getElementById('reviewCount').innerHTML = `Currently there are ${count} with an average of rating of ${ratingAve} stars`
 
     });
 });

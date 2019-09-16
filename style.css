@@ -54,14 +54,8 @@ html {
   text-align: center;
 }
 
-#TextArea1 {
-  background-color: #444444;
-  height: 400px;
-  width: 400px;
-  margin-left: 50%;
-  margin-right: 50%;
-  transform: translateX(-50%);
-}
+
+
 
 .section3 {
   min-height: 100%;
