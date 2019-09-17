@@ -1,69 +1,70 @@
-$(document).ready(function () {
-    var settingsRev = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/RQZCOKGctMfuf-MRVUdVnw/reviews?sort_by=date_desc",
-        "method": "GET",
-        "headers": {
-            "Content-Type": "application/json",
-            "Authorization": "Bearer ng-wZ3Z6BAY_7Qj5LvRPzxE5Uw_64fwJFF0YWaIf1zHD6QU5zzraEO3EaJ7qYAKr0LCrwwD_dahPHqHYFZ5v1fcAsAdghBwHY_jRf_nzKJUct9SKW8jW_X7mD4F9XXYx",
+$(document).ready(function() {
+  var settingsRev = {
+    async: true,
+    crossDomain: true,
+    url:
+      'https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/RQZCOKGctMfuf-MRVUdVnw/reviews?sort_by=date_desc',
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization:
+        'Bearer ng-wZ3Z6BAY_7Qj5LvRPzxE5Uw_64fwJFF0YWaIf1zHD6QU5zzraEO3EaJ7qYAKr0LCrwwD_dahPHqHYFZ5v1fcAsAdghBwHY_jRf_nzKJUct9SKW8jW_X7mD4F9XXYx'
+    },
+    processData: false,
+    data: ''
+  };
+  var settingsGen = {
+    async: true,
+    crossDomain: true,
+    url:
+      'https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/RQZCOKGctMfuf-MRVUdVnw',
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization:
+        'Bearer ng-wZ3Z6BAY_7Qj5LvRPzxE5Uw_64fwJFF0YWaIf1zHD6QU5zzraEO3EaJ7qYAKr0LCrwwD_dahPHqHYFZ5v1fcAsAdghBwHY_jRf_nzKJUct9SKW8jW_X7mD4F9XXYx'
+    },
+    processData: false,
+    data: ''
+  };
 
-        },
-        "processData": false,
-        "data": ""
-    }
-    var settingsGen = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/RQZCOKGctMfuf-MRVUdVnw",
-        "method": "GET",
-        "headers": {
-            "Content-Type": "application/json",
-            "Authorization": "Bearer ng-wZ3Z6BAY_7Qj5LvRPzxE5Uw_64fwJFF0YWaIf1zHD6QU5zzraEO3EaJ7qYAKr0LCrwwD_dahPHqHYFZ5v1fcAsAdghBwHY_jRf_nzKJUct9SKW8jW_X7mD4F9XXYx",
+  $.ajax(settingsRev).done(function(responseReviews) {
+    var reviewOne = {
+      name: responseReviews.reviews[0].user.name,
+      text: responseReviews.reviews[0].text,
+      rating: responseReviews.reviews[0].rating
+    };
+    document.getElementById('textTitle1').innerHTML = reviewOne.name;
+    document.getElementById('review1Text').innerHTML = reviewOne.text;
+    document.getElementById('RatingOne').src = `/img/${reviewOne.rating}.png`;
 
-        },
-        "processData": false,
-        "data": ""
-    }
+    var reviewTwo = {
+      name: responseReviews.reviews[1].user.name,
+      text: responseReviews.reviews[1].text,
+      rating: responseReviews.reviews[1].rating
+    };
+    document.getElementById('textTitle2').innerHTML = reviewTwo.name;
+    document.getElementById('review2Text').innerHTML = reviewTwo.text;
+    document.getElementById('RatingTwo').src = `/img/${reviewTwo.rating}.png`;
 
+    var reviewThree = {
+      name: responseReviews.reviews[2].user.name,
+      text: responseReviews.reviews[2].text,
+      rating: responseReviews.reviews[2].rating
+    };
+    document.getElementById('textTitle3').innerHTML = reviewThree.name;
+    document.getElementById('review3Text').innerHTML = reviewThree.text;
+    document.getElementById(
+      'RatingThree'
+    ).src = `/img/${reviewThree.rating}.png`;
+  });
 
-    $.ajax(settingsRev).done(function (responseReviews) {
+  $.ajax(settingsGen).done(function(responseGen) {
+    var count = responseGen.review_count;
+    var ratingAve = responseGen.rating;
 
-        var reviewOne = {
-            name: responseReviews.reviews[i].user.name,
-            text: responseReviews.reviews[i].text,
-            rating: responseReviews.reviews[i].rating,
-        }
-        document.getElementById('textTitle1').innerHTML = reviewOne.name;
-        document.getElementById('review1Text').innerHTML = reviewOne.text;
-        document.getElementById('RatingOne').src = `/img/${reviewOne.rating}.png`;
-
-        var reviewTwo = {
-            name: responseReviews.reviews[1].user.name,
-            text: responseReviews.reviews[1].text,
-            rating: responseReviews.reviews[1].rating,
-        }
-        document.getElementById('textTitle2').innerHTML = reviewTwo.name;
-        document.getElementById('review2Text').innerHTML = reviewTwo.text;
-        document.getElementById('RatingTwo').src = `/img/${reviewTwo.rating}.png`;
-
-        var reviewThree = {
-            name: responseReviews.reviews[2].user.name,
-            text: responseReviews.reviews[2].text,
-            rating: responseReviews.reviews[2].rating,
-        }
-        document.getElementById('textTitle3').innerHTML = reviewThree.name;
-        document.getElementById('review3Text').innerHTML = reviewThree.text;
-        document.getElementById('RatingThree').src = `/img/${reviewThree.rating}.png`;
-
-    });
-
-
-    $.ajax(settingsGen).done(function (responseGen) {
-        var count = responseGen.review_count;
-        var ratingAve = responseGen.rating;
-
-        document.getElementById('reviewCount').innerHTML = `Currently there are ${count} with an average of rating of ${ratingAve} stars`
-
-    });
+    document.getElementById(
+      'reviewCount'
+    ).innerHTML = `Currently there are ${count} with an average of rating of ${ratingAve} stars`;
+  });
 });
