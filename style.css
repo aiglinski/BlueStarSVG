@@ -10,7 +10,6 @@ html {
 
 
 .stizar {
-
   padding-top: 40%;
   position: relative;
 }
@@ -61,10 +60,10 @@ html {
   background-color: #ffffff;
 }
 
-.sec {
+#sec {
   position: relative !;
   /* background-color: #d1d4dd; */
-  background-image: url("/img/leopard.jpg");
+  background-image: url("/img/beach.jpg");
   min-height: 100%;
   background-position: center;
   background-size: cover;
@@ -72,12 +71,12 @@ html {
   background-repeat: no-repeat;
 }
 
+
+
 #logo-text {
   animation: fill 1.2s ease forwards;
   animation-delay: .5s;
 }
-
-
 
 
 
