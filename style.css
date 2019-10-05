@@ -1,6 +1,7 @@
 body,
 html {
   height: 100%;
+  width: 100%;
 }
 
 #nav-logo {
@@ -57,6 +58,7 @@ html {
   #map {
     margin-left: 60px;
     border: 1px solid black;
+    max-width: 80%;
   }
 
   .row3 {
@@ -81,7 +83,7 @@ html {
 #sec {
   position: relative !;
   /* background-color: #d1d4dd; */
-  background-image: url("/img/beach.jpg");
+  background-image: url("/img/Beach.jpg");
   min-height: 100%;
   background-position: center;
   background-size: cover;
