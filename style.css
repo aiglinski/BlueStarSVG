@@ -26,12 +26,11 @@ html {
   transform: translate(-50%);
 }
 
-/* #logo-text {
+#logo-text {
   position: relative;
-  right: 50%;
-  left: 50%;
+
   transform: translateX(-50%);
-} */
+}
 
 #hrHome {
   border: 1px solid #444444;
