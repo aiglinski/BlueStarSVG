@@ -89,6 +89,14 @@ html {
   background-repeat: no-repeat;
 }
 
+.contact {
+  text-align: center;
+  /* background-color: aqua; */
+}
+.contact h1 {
+  transform: scale(2);
+}
+
 #logo-text {
   animation: fill 1.2s ease forwards;
   animation-delay: 0.5s;
