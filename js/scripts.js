@@ -1,14 +1,12 @@
-$(document).ready(function() {
+$(document).ready(function () {
   var settingsRev = {
     async: true,
     crossDomain: true,
-    url:
-      "https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/RQZCOKGctMfuf-MRVUdVnw/reviews",
+    url: "https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/RQZCOKGctMfuf-MRVUdVnw/reviews",
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      Authorization:
-        "Bearer ng-wZ3Z6BAY_7Qj5LvRPzxE5Uw_64fwJFF0YWaIf1zHD6QU5zzraEO3EaJ7qYAKr0LCrwwD_dahPHqHYFZ5v1fcAsAdghBwHY_jRf_nzKJUct9SKW8jW_X7mD4F9XXYx"
+      Authorization: "Bearer dXtk362BkuUPkzjgPaXmJi6q1_9rtXRWQzn8dDuzA810snDSoTrTURu_JLdNcEV4Pnz7AeCai-MeCi56hLdgpC5ozLSCjjvSwdrvhc9kPzzNMA2yV_fVyJ0rWLyXXXYx"
     },
     processData: false,
     data: ""
@@ -16,19 +14,17 @@ $(document).ready(function() {
   var settingsGen = {
     async: true,
     crossDomain: true,
-    url:
-      "https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/RQZCOKGctMfuf-MRVUdVnw",
+    url: "https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/RQZCOKGctMfuf-MRVUdVnw",
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      Authorization:
-        "Bearer ng-wZ3Z6BAY_7Qj5LvRPzxE5Uw_64fwJFF0YWaIf1zHD6QU5zzraEO3EaJ7qYAKr0LCrwwD_dahPHqHYFZ5v1fcAsAdghBwHY_jRf_nzKJUct9SKW8jW_X7mD4F9XXYx"
+      Authorization: "Bearer dXtk362BkuUPkzjgPaXmJi6q1_9rtXRWQzn8dDuzA810snDSoTrTURu_JLdNcEV4Pnz7AeCai-MeCi56hLdgpC5ozLSCjjvSwdrvhc9kPzzNMA2yV_fVyJ0rWLyXXXYx"
     },
     processData: false,
     data: ""
   };
 
-  $.ajax(settingsRev).done(function(responseReviews) {
+  $.ajax(settingsRev).done(function (responseReviews) {
     var reviewOne = {
       name: responseReviews.reviews[0].user.name,
       text: responseReviews.reviews[0].text,
@@ -59,7 +55,7 @@ $(document).ready(function() {
     ).src = `/img/${reviewThree.rating}.png`;
   });
 
-  $.ajax(settingsGen).done(function(responseGen) {
+  $.ajax(settingsGen).done(function (responseGen) {
     var count = responseGen.review_count;
     var ratingAve = responseGen.rating;
 
@@ -81,12 +77,12 @@ $(document).ready(function() {
     var pctScrolled = Math.floor((scrollTop / secheight) * 100);
     console.log(pctScrolled);
 
-    $(window).on("scroll", function() {
+    $(window).on("scroll", function () {
       $("#sec::before").css("opacity", 100 - $(section).amountScrolled());
     });
   }
 
-  window.addEventListener("scroll", function() {
+  window.addEventListener("scroll", function () {
     // document.body.style.backgroundColor = "white";
     // this.document.getElementById('sec').style.backgroundImage = "none";
     // this.console.log(secHeight);

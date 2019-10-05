@@ -60,6 +60,32 @@ html {
   background-color: #ffffff;
 }
 
+@media (min-width: 768px) {
+  #map {
+    margin-left: 60px;
+    border: 1px solid black;
+  }
+
+  .row3 {
+    transform: translateY(50px)
+  }
+}
+
+@media (max-width: 768px) {
+  #map {
+    /* margin-left: 0%; */
+    border: 1px solid black;
+  }
+
+  .row3 {
+    transform: translateY(50px)
+  }
+}
+
+
+
+
+
 #sec {
   position: relative !;
   /* background-color: #d1d4dd; */
