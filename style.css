@@ -7,14 +7,13 @@ html {
   color: #ffffff;
 }
 
-
-
 .stizar {
   padding-top: 40%;
   position: relative;
 }
 
-#logo {
+#logo,
+#logo-text {
   max-height: 100%;
   max-width: 100%;
   width: 75%;
@@ -27,18 +26,16 @@ html {
   transform: translate(-50%);
 }
 
-#logo-text {
+/* #logo-text {
   position: relative;
   right: 50%;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 #hrHome {
   border: 1px solid #444444;
 }
-
-
 
 .section2 {
   min-height: 100%;
@@ -52,9 +49,6 @@ html {
   text-align: center;
 }
 
-
-
-
 .section3 {
   min-height: 100%;
   background-color: #ffffff;
@@ -67,24 +61,23 @@ html {
   }
 
   .row3 {
-    transform: translateY(50px)
+    transform: translateY(50px);
   }
 }
 
 @media (max-width: 768px) {
   #map {
-    /* margin-left: 0%; */
+    max-width: 80%;
+    margin-left: 10%;
+    height: 40vh;
+
     border: 1px solid black;
   }
 
   .row3 {
-    transform: translateY(50px)
+    transform: translateY(50px);
   }
 }
-
-
-
-
 
 #sec {
   position: relative !;
@@ -97,16 +90,10 @@ html {
   background-repeat: no-repeat;
 }
 
-
-
 #logo-text {
   animation: fill 1.2s ease forwards;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
-
-
-
-
 
 #logo-text path:nth-child(1) {
   stroke-dasharray: 607.349;
@@ -179,10 +166,6 @@ html {
   stroke-dashoffset: 437.62;
   animation: line-anim 2s ease forwards;
 }
-
-
-
-
 
 @keyframes line-anim {
   to {
