@@ -66,6 +66,9 @@ $(document).ready(function () {
       "reviewCount"
     ).innerHTML = `Currently there are ${count} with an average of rating of ${ratingAve} stars`;
   });
+  var h = document.documentElement.clientHeight;
+  console.log(h)
+  document.getElementById('sec').style.backgroundSize = (`auto ${h}`)
 
   //   fade in background over opaque background
 
