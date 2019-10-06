@@ -111,7 +111,7 @@ html {
     transform: translateY(50px);
   }
   #sec {
-    position: relative;
+    position: fixed;
 
     background-image: url("./img/Beach.jpg");
     min-height: 100%;
