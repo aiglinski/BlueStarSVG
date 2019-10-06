@@ -67,8 +67,9 @@ $(document).ready(function () {
     ).innerHTML = `Currently there are ${count} with an average of rating of ${ratingAve} stars`;
   });
   var h = document.documentElement.clientHeight;
-  console.log(h)
-  document.getElementById('sec').style.backgroundSize = (`auto ${h}px`)
+
+  var hOutput = document.getElementById("sec").style.backgroundSize = (`auto ${h}px`)
+  console.log(hOutput)
 
   //   fade in background over opaque background
 
