@@ -68,7 +68,7 @@ $(document).ready(function () {
   });
   var h = document.documentElement.clientHeight;
   console.log(h)
-  document.getElementById('sec').style.backgroundSize = (`auto ${h}`)
+  document.getElementById('sec').style.backgroundSize = (`auto ${h}px`)
 
   //   fade in background over opaque background
 
