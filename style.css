@@ -18,7 +18,7 @@ html {
   max-height: 100%;
   max-width: 100%;
   width: 75%;
-  height: 75%;
+  height: 15%;
   position: absolute;
   top: 0%;
   bottom: 50%;
@@ -29,7 +29,6 @@ html {
 
 #logo-text {
   position: relative;
-
   transform: translateX(-50%);
 }
 
@@ -71,6 +70,16 @@ html {
   .row3 {
     transform: translateY(50px);
   }
+  #sec {
+    position: relative;
+
+    background-image: url("./img/Beach.jpg");
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (max-width: 960px) {
@@ -101,17 +110,16 @@ html {
   .row3 {
     transform: translateY(50px);
   }
-}
+  #sec {
+    position: relative;
 
-#sec {
-  position: relative !;
-  /* background-color: #d1d4dd; */
-  background-image: url("./img/Beach.jpg");
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+    background-image: url("./img/Beach.jpg");
+    min-height: 100%;
+    background-position: 50% 75%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
 }
 
 #logo-text {
