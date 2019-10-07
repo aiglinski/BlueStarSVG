@@ -71,6 +71,10 @@ $(document).ready(function () {
   var hOutput = document.getElementById("sec").style.backgroundSize = (`auto ${h}px`)
   console.log(hOutput)
 
+  var w = document.documentElement.clientWidth;
+  console.log(w);
+
+
   //   fade in background over opaque background
 
   // function amountScrolled() {
